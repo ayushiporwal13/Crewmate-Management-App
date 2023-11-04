@@ -67,7 +67,7 @@ const EditCrew = ({data}) => {
       <h3>Current Crewmate Info:</h3>
       <h4>
         Name: {data[0].name} , Speed: {data[0].speed}, Color:{" "}
-        {data[0].color}
+        {data[0].color} , Category: {data[0].category}
       </h4>
       <form onSubmit={updateCrew}>
         <Detail title='Name:' type='text' placeholder="Enter crewmate's name" handleChange={handleChange} name='name' />
