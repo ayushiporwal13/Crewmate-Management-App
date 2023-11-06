@@ -19,9 +19,9 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-- [ ] A crewmate can be given a category upon creation which restricts their attributes
+- [x] A crewmate can be given a category upon creation which restricts their attributes
 - [x] The site displays summary statistics about a user's crew on their crew page 
-- [ ] The site displays a custom "success" metric about a user's crew which changes the look of the crewmate list
+- [x] The site displays a custom "success" metric about a user's crew which changes the look of the crewmate list
 
 The following **additional** features are implemented:
 
@@ -31,7 +31,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-[Video Walkthrough](https://i.imgur.com/XrDbdSI.gif)
+[Video Walkthrough](https://i.imgur.com/i7ssnCd.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with [CloudConvert](https://cloudconvert.com/mp4-to-gif)  

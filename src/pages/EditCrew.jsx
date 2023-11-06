@@ -8,6 +8,8 @@ const EditCrew = ({data}) => {
   const { id } = useParams();
   const [crewDetails, setCrewDetails] = useState({});
 
+  const crew = data.filter((crewmate) => crewmate.id == id);
+
   async function deleteCrew(event) {
     event.preventDefault();
 
@@ -66,8 +68,8 @@ const EditCrew = ({data}) => {
       />
       <h3>Current Crewmate Info:</h3>
       <h4>
-        Name: {data[0].name} , Speed: {data[0].speed}, Color:{" "}
-        {data[0].color} , Category: {data[0].category}
+        Name: {crew[0].name} , Speed: {crew[0].speed}, Color:{" "}
+        {crew[0].color} , Category: {crew[0].category}
       </h4>
       <form onSubmit={updateCrew}>
         <Detail title='Name:' type='text' placeholder="Enter crewmate's name" handleChange={handleChange} name='name' />

@@ -1,9 +1,11 @@
 /* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+
 
 const CrewInfo = ({data}) => {
-  console.log('CrewInfor data', data[0]);
-  const crew = data.filter((crewmate) => crewmate.id === id);
+  const params = useParams();
+  const crew = data.filter((crewmate) => crewmate.id == params.id);
+
   return (
     <div>
       <h1>Crewmate : {crew[0].name}</h1>
