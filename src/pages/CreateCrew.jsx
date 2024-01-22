@@ -9,10 +9,7 @@ const CreateCrew = () => {
   const [crewDetails, setCrewDetails] = useState({name:'',speed:'',color:''});
 
   const handleChange = (event) => {
-    console.log('event.target',event.target);
     const {name,value} = event.target;
-    console.log('name',name);
-    console.log('value',value);
     setCrewDetails( (prev) => {
       return{
         ...prev,
@@ -20,7 +17,6 @@ const CreateCrew = () => {
       }
     })
 
-    console.log('crewDetails',crewDetails);
   }
 
   const createCrew = async (event) => {

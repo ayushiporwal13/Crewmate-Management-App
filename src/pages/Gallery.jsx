@@ -24,7 +24,6 @@ const Gallery = ({data}) => {
     fetchCrew();
   }, []);
 
-    console.log('Gallery data',data)
     const BluePercentage = (data.filter((crewmate) => crewmate.color === 'Blue').length / data.length) * 100;
     const RedPercentage = (data.filter((crewmate) => crewmate.color === 'Red').length / data.length) * 100;
     const GreenPercentage = (data.filter((crewmate) => crewmate.color === 'Green').length / data.length) * 100;
